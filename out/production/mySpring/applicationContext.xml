@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  - Middle tier application context definition for the image database.
+  -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+				http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+				http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+    <!-- put Bean in this container file. Bean = service/ dao/ domain/ action/ data src-->
+    <!-- The purpose of Bean:
+        when Spring framework load this file, Spring will create Bean objective and load the obj into memory
+        Below is equivalent with
+        UserService hsp = new UserService();
+        userService.setName("Alumi5566");
+    -->
+
+    <bean id="hsp" class="com.service.UserService">
+        <!-- put property here = injection-->
+        <property name="name">
+            <value>Alumi5566InBEAN</value>
+        </property>
+        <property name="byeService" ref="hsp2" />
+    </bean>
+    <bean id="hsp2" class="com.service.ByeService">
+        <!-- put property here = injection-->
+        <property name="name" value="NaomiInBEAN"></property>
+    </bean>
+</beans>
