@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+<!--    <bean id="vehicle" class="org.example.Car"></bean>-->
+        <context:component-scan base-package="org.example2"></context:component-scan>
+
+        <bean id="tire" class="org.example2.Tire">
+<!--                Setter Injection-->
+<!--                <property name="brand" value="FireStone"></property>-->
+<!--                Constructor Injection-->
+                <constructor-arg value="Dunlop"></constructor-arg>
+        </bean>
+</beans>
