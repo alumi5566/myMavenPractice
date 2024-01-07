@@ -2,6 +2,7 @@ package org.example;
 
 //import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 /**
@@ -19,8 +20,9 @@ public class AppExample1_ApplicationContext
 //        Bike bike = new Bike();
 //        bike.drive();
 
+//        ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 //        new ClassPathXmlApplicationContext("spring.xml"); doesn't work
-        ApplicationContext context = new FileSystemXmlApplicationContext("src/main/java/spring.xml");
+        ApplicationContext context = new FileSystemXmlApplicationContext("Practice/myMaven/src/main/java/spring.xml");
 //        getBean() will give you the obj based on the bean ID
         Vehicle obj = (Vehicle) context.getBean("vehicle");
         obj.drive();
