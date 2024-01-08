@@ -16,6 +16,7 @@ public class AppGuiceExample_Binding
         PizzaBillingService pizza = injector.getInstance(PizzaBillingService.class);
 
         pizza.chargeOrder(100, "12345678");
+        // dummy commit
     }
 }
 
