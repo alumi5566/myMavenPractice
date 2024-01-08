@@ -1,4 +1,4 @@
-package org.guiceExample;
+package org.guiceExample3;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
@@ -7,11 +7,11 @@ import com.google.inject.Injector;
  * Hello world!
  *
  */
-public class AppGuiceExample
+public class AppGuiceExample3_Custom_Annotation
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World App!" );
+        System.out.println( "Hello World App 3!" );
         Injector injector = Guice.createInjector(new BillingModule());
         PizzaBillingService pizza = injector.getInstance(PizzaBillingService.class);
 
