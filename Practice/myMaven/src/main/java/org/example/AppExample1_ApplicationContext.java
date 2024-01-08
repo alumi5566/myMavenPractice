@@ -22,7 +22,8 @@ public class AppExample1_ApplicationContext
 
 //        ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 //        new ClassPathXmlApplicationContext("spring.xml"); doesn't work
-        ApplicationContext context = new FileSystemXmlApplicationContext("Practice/myMaven/src/main/java/spring.xml");
+//        ApplicationContext context = new FileSystemXmlApplicationContext("Practice/myMaven/src/main/java/spring.xml");
+        ApplicationContext context = new FileSystemXmlApplicationContext("classpath:spring.xml");
 //        getBean() will give you the obj based on the bean ID
         Vehicle obj = (Vehicle) context.getBean("vehicle");
         obj.drive();

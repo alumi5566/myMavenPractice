@@ -12,7 +12,7 @@ public class AppExample2_AnnotationBase_SetterInject_ConstructInject
     public static void main( String[] args )
     {
         System.out.println( "Hello World App from Example2!" );
-        ApplicationContext context = new FileSystemXmlApplicationContext("Practice/myMaven/src/main/java/spring2.xml");
+        ApplicationContext context = new FileSystemXmlApplicationContext("classpath:spring2.xml");
 //        getBean() will give you the obj based on the bean ID
 //        different from example one, we have @components for all vehicle class
         Vehicle obj = (Vehicle) context.getBean("car");

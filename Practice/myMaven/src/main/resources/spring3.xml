@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+<!--    <bean id="vehicle" class="org.example3.Car">-->
+<!--        <property name="tire" ref="tire"/>-->
+<!--    </bean>-->
+        <context:component-scan base-package="org.example3"></context:component-scan>
+
+<!--        <bean id="tire" class="org.example3.Tire">-->
+<!--                <property name="brand" value="FireStone"></property>-->
+<!--&lt;!&ndash;                <constructor-arg value="Dunlop"></constructor-arg>&ndash;&gt;-->
+<!--        </bean>-->
+</beans>

@@ -12,7 +12,7 @@ public class AppExample3_Autowired
     public static void main( String[] args )
     {
         System.out.println( "Hello World App from Example3!" );
-        ApplicationContext context = new FileSystemXmlApplicationContext("Practice/myMaven/src/main/java/spring3.xml");
+        ApplicationContext context = new FileSystemXmlApplicationContext("classpath:spring3.xml");
 //        getBean() will give you the obj based on the bean ID
 //        different from example one, we have @components for all vehicle class
         Vehicle obj = (Vehicle) context.getBean("car");
