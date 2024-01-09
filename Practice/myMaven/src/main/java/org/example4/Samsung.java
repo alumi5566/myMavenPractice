@@ -11,9 +11,9 @@ public class Samsung {
         return cpu;
     }
 
-    public void setCup(MobileCPU cup) {
-        this.cpu = cup;
-    }
+//    public void setCup(MobileCPU cup) {
+//        this.cpu = cpu;
+//    }
 
     public void config(){
         System.out.println("Samsung Class");
